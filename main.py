@@ -22,8 +22,8 @@ def post_transaction(transaction :Transaction):
   print(transaction)
   transation_dict = transaction.dict()
   if blockchain.verify_transaction(transation_dict):
-    transaction_pool["transactions"].append(transation_dict)
-    return { "message": "Transaction is posted" }
+    if blockchain.add_transaction_pool(transation_dict):
+    	return { "message": "Transaction is posted." }
   
   
 if __name__ == "__main__":

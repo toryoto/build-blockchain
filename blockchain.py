@@ -6,7 +6,19 @@ class BlockChain(object):
   def __init__(self):
     self.transaction_pool = { "transactions": [] }
   
+  def add_transaction_pool(self, transaction):
+    # 送信するトランザクションがすでに存在しない場合は追加
+    if transaction not in self.transaction_pool["transaction"]:
+      self.transaction_pool["transactions"].append(transaction);
+      return True
+    else:
+      return False
+  
   def verify_transaction(self, transaction):
+    # 送金額がマイナスはFalse
+    if transaction["amount"] < 0:
+      return False
+    
     # 送信者の公開鍵をバイナリに
     public_key =  VerifyingKey.from_string(binascii.unhexlify(transaction["sender"]), curve=SECP256k1)
 		
