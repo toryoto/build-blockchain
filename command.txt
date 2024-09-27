@@ -1,0 +1,4 @@
+source build-blockchain/bin/activate
+deactivate
+
+ssh -i /Users/ryototaga/Desktop/blockchain1.pem ec2-user@3.27.47.0
