@@ -9,7 +9,7 @@ coin_num = 5
 
 # 送信者の秘密鍵と受信者の公開鍵の文字列
 secret_key_sender_str = "8dab078a7022bd5527ad29f9b255d4b5991f891f37000e4a3f865cbc5e00621e"
-public_key_receiver_str = "ab3d44d40c63e94375eed792d739a90ec6707efea10b1df3be1f3680ecac098565ec78a955d26048f15a36fc0b5d537beb37407f117f5fda347a1b354ec724a0"
+public_key_receiver_str = "1f81cd8e0f25e0691153bafec0ba9db8735d7a82b3d62ef99248c4ba82d9cd150a94b0141903e9462d0b076974f3e5c53fc5a6c61481439dea58931bb125a2a7"
 
 
 # 送信者の鍵をバイナリに

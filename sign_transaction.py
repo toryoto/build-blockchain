@@ -8,7 +8,7 @@ import binascii
 import json
 
 secret_key_A_str = "54004d1eb23cd5db63c31c3aec98800d4e7683bcb9cf074d6c966f50c37910a0"
-public_key_B_str = "a53ff8e4f29d9b2b1e826637564e33542fbf981b8621c2599d873166e7c434c8"
+public_key_B_str = "7c2c089c89a32d423bd6bde50f55964a3e21f3a99a6e24c00549d40feda655fe6041cb8476deffb4b6e52f3c191ab3e59c086d6b9ebba099d325c138d9403d58"
 
 # 文字列を秘密鍵オブジェクトに変換するために16進数をバイナリに戻してから秘密鍵を生成
 secret_key_A = SigningKey.from_string(binascii.unhexlify(secret_key_A_str), curve=SECP256k1)
