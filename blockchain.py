@@ -21,6 +21,7 @@ class BlockChain(object):
 			return {"transactions": []}
 			
 	def add_transaction_pool(self, transaction):
+    #既存のトランザクションのコピーを防ぐ
 		if transaction not in self.transaction_pool["transactions"]:
 			self.transaction_pool["transactions"].append(transaction)
 			return True

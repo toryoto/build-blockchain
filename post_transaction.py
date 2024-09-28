@@ -36,5 +36,5 @@ transaction = {
 }
 
 # Json形式にした署名済みトランザクションを'/transaction_pool'にPOSTメソッドで送信
-res = requests.post("http://3.27.47.0:8000/transaction_pool", json.dumps(transaction))
+res = requests.post("http://127.0.0.1:8001/transaction_pool", json.dumps(transaction))
 print(res.text)
