@@ -5,11 +5,11 @@ from ecdsa import SigningKey, SECP256k1
 import binascii
 import json
 
-coin_num = 3
+coin_num = 5
 
 # 送信者の秘密鍵と受信者の公開鍵の文字列
-secret_key_sender_str = "54004d1eb23cd5db63c31c3aec98800d4e7683bcb9cf074d6c966f50c37910a0"
-public_key_receiver_str = "a53ff8e4f29d9b2b1e826637564e33542fbf981b8621c2599d873166e7c434c8"
+secret_key_sender_str = "8dab078a7022bd5527ad29f9b255d4b5991f891f37000e4a3f865cbc5e00621e"
+public_key_receiver_str = "ab3d44d40c63e94375eed792d739a90ec6707efea10b1df3be1f3680ecac098565ec78a955d26048f15a36fc0b5d537beb37407f117f5fda347a1b354ec724a0"
 
 
 # 送信者の鍵をバイナリに
